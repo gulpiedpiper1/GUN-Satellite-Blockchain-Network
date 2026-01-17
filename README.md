@@ -1,7 +1,8 @@
 # GÜN: Blokzincir Tabanlı Güvenli Uydu Haberleşme Ağı (ISL) 🛰️🔗
 
 ## 📖 Proje Hakkında
-[cite_start]**GÜN**, uydu ağlarında özellikle **Inter-Satellite Link (ISL)** üzerinden gerçekleştirilen haberleşmenin güvenliğini artırmak amacıyla geliştirilmiş bir protokol ve simülasyon aracıdır[cite: 78, 79]. [cite_start]Bu projede, uydu-uydu ve uydu-yer istasyonu arasındaki veri iletiminde bütünlük, doğrulama ve değiştirilemezlik (immutability) sağlayan yenilikçi bir yaklaşım sergilenmektedir[cite: 79, 81].
+**GÜN**, uydu ağlarında özellikle **Inter-Satellite Link (ISL)** üzerinden gerçekleştirilen haberleşmenin güvenliğini artırmak amacıyla geliştirilmiş bir protokol ve simülasyon aracıdır.  
+Bu projede, uydu-uydu ve uydu-yer istasyonu arasındaki veri iletiminde bütünlük, doğrulama ve değiştirilemezlik (immutability) sağlayan yenilikçi bir yaklaşım sergilenmektedir.
 
 ## 🛠️ Sistem Mimarisi
 
@@ -18,11 +19,13 @@ Uydular arasındaki veri iletimini şifrelemek için dinamik oturum anahtarları
 * **Zaman Sınırı:** Her anahtarın bir geçerlilik süresi (expiration) bulunur.
 
 ### 3. Yörünge ve Link Analizi (MATLAB)
-[cite_start]Proje, teorik uydu mekaniği hesaplamaları ile desteklenmiştir[cite: 80]:
+Proje, teorik uydu mekaniği hesaplamaları ile desteklenmiştir:
 * **Slant Range Hesaplama:** LEO (600 km) irtifadaki uydular için bakış açısına bağlı mesafe değişimi analiz edilir.
 * **Matematiksel Model:** Hesaplamalarda aşağıdaki formül kullanılmıştır:
 
-$$d = R_e \cdot (\sqrt{(\frac{R_s}{R_e})^2 - \cos^2(\epsilon)} - \sin(\epsilon))$$
+$$
+d = R_e \cdot \left(\sqrt{\left(\frac{R_s}{R_e}\right)^2 - \cos^2(\epsilon)} - \sin(\epsilon)\right)
+$$
 
 *(Burada $d$: Slant Range, $R_e$: Dünya yarıçapı, $R_s$: Uydu yarıçapı, $\epsilon$: Bakış açısıdır.)*
 
@@ -34,13 +37,14 @@ $$d = R_e \cdot (\sqrt{(\frac{R_s}{R_e})^2 - \cos^2(\epsilon)} - \sin(\epsilon))
 4. **Görselleştirme:** **NetworkX** kütüphanesi ile uydu ağı ve anahtar alışverişi görselleştirilir.
 
 ## 📂 Dosya İçerikleri
-* [cite_start]`blockchain_core.py`: Blokzincir yapısının temel sınıfları[cite: 81].
-* [cite_start]`key_manager.py`: Kriptografik anahtar yönetimi ve hash işlemleri[cite: 81].
-* [cite_start]`simulation.py`: Senaryo bazlı haberleşme simülasyonu[cite: 81].
-* [cite_start]`elevation_analysis.m`: Yörünge analiz grafikleri için MATLAB scripti[cite: 81].
+* `blockchain_core.py`: Blokzincir yapısının temel sınıfları.
+* `key_manager.py`: Kriptografik anahtar yönetimi ve hash işlemleri.
+* `simulation.py`: Senaryo bazlı haberleşme simülasyonu.
+* `elevation_analysis.m`: Yörünge analiz grafikleri için MATLAB scripti.
 
 ## 🎓 Akademik Bağlam
-[cite_start]Bu çalışma **Necmettin Erbakan Üniversitesi**, Havacılık ve Uzay Mühendisliği Bölümü bünyesinde "Teknoloji ve İnovasyon" dersi projesi olarak geliştirilmiştir[cite: 7, 25, 78].
+Bu çalışma **Necmettin Erbakan Üniversitesi**, Havacılık ve Uzay Mühendisliği Bölümü bünyesinde  
+“Teknoloji ve İnovasyon” dersi kapsamında proje olarak geliştirilmiştir.
 
 ---
 *Geliştiren: Fatma Gül Koçak*
