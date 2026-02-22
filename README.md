@@ -42,9 +42,3 @@ $$
 * `simulation.py`: Senaryo bazlı haberleşme simülasyonu.
 * `elevation_analysis.m`: Yörünge analiz grafikleri için MATLAB scripti.
 
-## 🎓 Akademik Bağlam
-Bu çalışma **Necmettin Erbakan Üniversitesi**, Havacılık ve Uzay Mühendisliği Bölümü bünyesinde  
-“Teknoloji ve İnovasyon” dersi kapsamında proje olarak geliştirilmiştir.
-
----
-*Geliştiren: Fatma Gül Koçak*
